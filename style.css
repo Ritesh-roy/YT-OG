@@ -304,6 +304,115 @@ footer {
     }
 }
 
+/* =============================== */
+/* 📲 TABLET RESPONSIVE (≤1024px) */
+/* =============================== */
+@media (max-width: 1024px) {
+
+    nav {
+        padding: 0 6%;
+    }
+
+    .wrapper {
+        max-width: 900px;
+    }
+
+    .dl-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =============================== */
+/* 📱 MOBILE RESPONSIVE (≤768px) */
+/* =============================== */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 20px;
+        gap: 12px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 1.4rem;
+    }
+
+    .app-card {
+        padding: 25px;
+        border-radius: 24px;
+    }
+
+    .search-area {
+        flex-direction: column;
+        padding: 12px;
+    }
+
+    .btn-analyze {
+        width: 100%;
+        padding: 14px;
+    }
+
+    .video-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .thumb-wrap {
+        width: 100%;
+    }
+
+    .dl-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ranking-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .contact-box {
+        padding: 25px;
+    }
+}
+
+
+/* =============================== */
+/* 📱 SMALL MOBILE RESPONSIVE (≤480px) */
+/* =============================== */
+@media (max-width: 480px) {
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .section-title {
+        font-size: 1.4rem;
+    }
+
+    .ranking-table th,
+    .ranking-table td {
+        padding: 10px 12px;
+        font-size: 0.85rem;
+    }
+
+    footer {
+        padding: 40px 10px;
+    }
+
+    .copyright {
+        font-size: 0.8rem;
+    }
+}
+
 /* .logo {
   height: 38px;
   width: auto;
