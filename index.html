@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+     
+    <title>LEO-PRO | Premium Extractor by Ritesh Roy</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="shortcut icon" href="./leo-das-1.png" type="image/x-icon">
+   
+   
+</head>
+<body>
+
+    <nav>
+        
+        <a href="#" class="logo">LEO-PRO</a>
+           
+        <ul class="nav-links">
+            <li><a href="#downloader">Downloader</a></li>
+            <li><a href="#ranking">Ranking</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div style="font-size: 0.7rem; color: var(--accent); border: 1px solid var(--accent); padding: 4px 10px; border-radius: 5px;">PRO VERSION</div>
+    </nav>
+
+    <div class="wrapper">
+        <div class="app-card" id="downloader">
+            <div class="search-area">
+                <input type="text" id="videoUrl" placeholder="Enter Video URL here..." value="https://youtu.be/Ec08db2hP10">
+                <button class="btn-analyze" onclick="processVideo()">ANALYZE LINK</button>
+            </div>
+
+            <div id="loader" style="display:none; text-align: center; color: var(--primary); font-weight: bold; margin-bottom: 20px;">
+                ⚡ SECURING API CONNECTION...
+            </div>
+
+            <div id="resultSection">
+                <div class="video-info">
+                    <div class="thumb-wrap">
+                        <img id="displayThumb" src="" alt="">
+                    </div>
+                    <div>
+                        <h2 id="displayTitle">Video Title</h2>
+                        <p id="displayAuthor" style="color: var(--text-dim);">Channel Name</p>
+                        <div class="badge">API Status: Operational</div>
+                    </div>
+                </div>
+
+                <div class="dl-grid">
+                    <div class="dl-card">
+                        <div><h4>MP4 Video</h4><p>1080p Ultra HD</p></div>
+                        <a href="https://v6.www-y2mate.com/" id="dl-1080" class="icon-box bg-blue" onclick="startDownload(event, this.href)">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                        </a>
+                    </div>
+                    <div class="dl-card">
+                        <div><h4>MP4 Video</h4><p>720p HD Quality</p></div>
+                        <a href="https://v6.www-y2mate.com/" id="dl-720" class="icon-box bg-blue" onclick="startDownload(event, this.href)">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                        </a>
+                    </div>
+                    <div class="dl-card">
+                        <div><h4>MP3 Audio</h4><p>320kbps High</p></div>
+                        <a href="#" id="dl-mp3" class="icon-box bg-pink" onclick="startDownload(event, this.href)">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title" id="ranking">Global User Ranking</h2>
+        <table class="ranking-table">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>User ID</th>
+                    <th>Downloads</th>
+                    <th>Region</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>#1</td><td>RITESH</td><td>490</td><td>India</td></tr>
+                <tr><td>#2</td><td>DEEPAK</td><td>310</td><td>India</td></tr>
+                <tr><td>#3</td><td>PRASHANT</td><td>150</td><td>India</td></tr>
+                <tr><td>#4</td><td>AJAY</td><td>120</td><td>India</td></tr>
+            </tbody>
+        </table>
+
+        <div class="contact-box" id="contact">
+            <h2 style="margin-bottom: 25px;">Message Box</h2>
+            <form id="msgForm">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" id="msgName" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" id="msgEmail" placeholder="name@company.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Your Message</label>
+                    <textarea id="msgContent" rows="4" placeholder="How can Ritesh Roy help you?"></textarea>
+                </div>
+                <button type="submit" class="btn-analyze" style="width: 100%; height: 50px;">SEND MESSAGE</button>
+            </form>
+            <p id="msgSent" style="display:none; color: var(--primary); text-align: center; margin-top: 15px;">✓ Your message has been sent to Ritesh Roy.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p class="copyright">&copy; 2026 TUBEPRO All Rights Reserved.</p>
+        <p style="margin-top: 10px;">Created by <a href="#" class="designer">Ritesh Roy</a></p>
+    </footer>
+
+     <script src="script.js" defer></script>
+
+</body>
+</html>
